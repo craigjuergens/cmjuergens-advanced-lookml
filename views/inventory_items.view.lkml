@@ -11,6 +11,8 @@ view: inventory_items {
 
 # this is a comment
 
+# comment #2 12:53PM
+
   dimension: cost {
     group_label: "Product"
     type: number
