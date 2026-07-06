@@ -12,7 +12,7 @@ view: order_items {
   dimension_group: created {
     description: "The date on which the payment processing was completed. Can vary slightly (delay) from the inventory sold at date."
     type: time
-    timeframes: [raw, time, date, week, month, quarter, year]
+    timeframes: [raw, time, date, week, month, month_name, quarter, year]
     sql: ${TABLE}.created_at ;;
   }
 
@@ -100,6 +100,7 @@ view: order_items {
   }
 
   measure: user_w_returns {
+    label: "Percent Users w Return"
     type: number
     value_format_name: percent_1
     sql: safe_divide(${count_return_users}, ${count_users}) ;;
