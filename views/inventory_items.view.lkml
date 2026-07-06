@@ -9,10 +9,6 @@ view: inventory_items {
     sql: ${TABLE}.id ;;
   }
 
-# this is a comment
-
-# comment #2 12:53PM
-
   dimension: cost {
     group_label: "Product"
     type: number
